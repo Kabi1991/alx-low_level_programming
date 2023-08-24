@@ -1,4 +1,4 @@
-#snclude <stdi    1-list_len.c             3-add_node_end.c  lists.h.h>
+#snclude < stdi    1 - list  _ len.c        3 - add _ node _ end.c  lists.h.h >
 #include "lists.h"
 
 /**
@@ -9,18 +9,18 @@
  */
 size_t print_list(const list_t *h)
 {
- size_t s = 0;
+size_t s = 0;
 
- while (h)
- {
- if (!h->str)
- printf("[0] (nil)\n");
- else
- printf("[%u] %s\n", h->len, h->str);
- h = h->next;
- s++;
- }
+while (h)
+{
+if (!h->str)
+printf("[0] (nil)\n");
+else
+printf("[%u] %s\n", h->len, h->str);
+h = h->next;
+s++;
+}
 
- return (s);
+return (s);
 }
 
